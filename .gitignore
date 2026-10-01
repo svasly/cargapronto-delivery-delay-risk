@@ -1,0 +1,38 @@
+# 1. Безопасность (Пароли и учетные данные)
+.env
+
+# 2. Логи градиентных бустингов и бинарные файлы моделей
+catboost_info/
+study_journal.log
+*.log
+*.joblib
+*.pkl
+*.pk1
+
+# 3. Базы данных и кэш Optuna
+optuna_db.sqlite3
+*.sqlite3
+
+# 4. Виртуальные окружения (скрываем локальные папки в любых директориях)
+**/venv/
+**/.venv/
+**/hotel-env/
+**/ml-env/
+**/car-env/
+
+# 5. Скрытый мусор JupyterLab и чекпоинты
+.virtual_documents/
+.ipynb_checkpoints/
+*.ipynb.checkpoint*
+
+# 6. Кэш компиляции Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# 7. Системные файлы операционных систем
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
